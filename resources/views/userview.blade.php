@@ -22,13 +22,7 @@
                         <div class="form-header">
                             <h1>Book Your Train</h1>
                         </div>
-                        <ul>
-                            @foreach($errors->all() as $e)
-                            <li>{{$e}}</li>
-                            @endforeach
-                        </ul>
-                        <form action="HomeController" method="POST">
-                            @csrf
+                        <form action="UserController" method="POST">
                             <div class="form-group">
                                 <div class="form-checkbox">
                                     <label for="roundtrip">
@@ -46,17 +40,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="source" type="text">
+                                <input class="form-control" type="text">
                                 <span class="form-label">Source</span>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="destination" type="text">
+                                <input class="form-control" type="text">
                                 <span class="form-label">Destination</span>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" name="date" type="date">
+                                        <input class="form-control" type="date">
                                         <span class="form-label">Date</span>
                                     </div>
                                 </div>
@@ -107,6 +101,7 @@
     </div>
 
 </body>
+
 
 
 </div>

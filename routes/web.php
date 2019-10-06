@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::view('/home' , "home");
+Route::post('/HomeController' , "HomeController@check_availability" );
 
-Route::get('/home', 'HomeController@index')->name('home');

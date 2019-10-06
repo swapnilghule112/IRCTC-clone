@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://www.irctc.co.in/nget/train-search">Reservations</a>
+                    <a href="/home">Reservations</a>
                     <a href="https://railway.railwaypost.in">careers</a>
                     <a href="http://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">Enquiry</a>
                 </div>

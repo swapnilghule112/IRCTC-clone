@@ -25,4 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function check_availability(Request $req)
+    {
+        $req->validate(['source'=>'required ',
+                        'destination'=>'required',
+                        'date'=>'required'
+                        ]);
+        // print_r($req->input());
+    }
 }
+
+
+
