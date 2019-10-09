@@ -1,3 +1,4 @@
+<!-- @author: Swapnil Ghule -->
 <?php
 
 /*
@@ -20,5 +21,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::view('/home' , "home");
-Route::post('/HomeController' , "HomeController@check_availability" );
+Route::post('/UserController' , "UserController@check_availability" );
 

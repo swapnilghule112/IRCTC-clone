@@ -1,3 +1,5 @@
+<!-- @author: Swapnil Ghule -->
+
 <?php
 
 namespace App\Http\Controllers;
@@ -28,9 +30,10 @@ class HomeController extends Controller
 
     public function check_availability(Request $req)
     {
-        $req->validate(['source'=>'required ',
-                        'destination'=>'required',
-                        'date'=>'required'
+        $req->validate(['source'=>'required | alpha',
+                        'destination'=>'required | alpha',
+                        'date'=>'required | date'
+
                         ]);
         // print_r($req->input());
     }

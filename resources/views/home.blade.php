@@ -1,3 +1,4 @@
+<!-- @author: Swapnil Ghule -->
 @extends('layouts.app')
 
 @section('content')
@@ -27,7 +28,7 @@
                             <li>{{$e}}</li>
                             @endforeach
                         </ul>
-                        <form action="HomeController" method="POST">
+                        <form action="UserController" method="POST">
                             @csrf
                             <div class="form-group">
                                 <div class="form-checkbox">

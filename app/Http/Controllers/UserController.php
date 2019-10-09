@@ -7,8 +7,13 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
 
+
     public function check_availability(Request $req)
     {
-        print_r($req->input());
+        $req->validate(['source'=>'required | alpha',
+                        'destination'=>'required | alpha',
+                        'date'=>'required | date'
+                        ]);
+
     }
 }

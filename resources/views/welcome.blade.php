@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>IRCTC</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,11 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    <img src="/logo/irctc.svg" style="max-height: 100px">
                     IRCTC
                 </div>
 
                 <div class="links">
-                    <a href="/home">Reservations</a>
+                    <a href="/login">Reservations</a>
                     <a href="https://railway.railwaypost.in">careers</a>
                     <a href="http://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">Enquiry</a>
                 </div>
