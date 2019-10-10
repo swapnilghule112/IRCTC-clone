@@ -28,22 +28,10 @@
                             <li>{{$e}}</li>
                             @endforeach
                         </ul>
-                        <form action="UserController" method="POST">
+                        <form action="TicketController" method="POST">
                             @csrf
                             <div class="form-group">
                                 <div class="form-checkbox">
-                                    <label for="roundtrip">
-                                        <input type="radio" id="roundtrip" name="flight-type">
-                                        <span></span>Roundtrip
-                                    </label>
-                                    <label for="one-way">
-                                        <input type="radio" id="one-way" name="flight-type">
-                                        <span></span>One way
-                                    </label>
-                                    <label for="multi-city">
-                                        <input type="radio" id="multi-city" name="flight-type">
-                                        <span></span>Multi-City
-                                    </label>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -98,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="form-btn">
-                                <button class="submit-btn">Check availability</button>
+                                <button class="submit-btn">Confirm</button>
                             </div>
                         </form>
                     </div>

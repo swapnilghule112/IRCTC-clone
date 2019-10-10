@@ -23,3 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::view('/home' , "home");
 Route::post('/UserController' , "UserController@check_availability" );
 
+Route::get('/tickets','TicketController@index');
+
+Route::get('/ticket/create','TicketController@create');
+
+Route::post('/ticket','TicketController@storeTicket');

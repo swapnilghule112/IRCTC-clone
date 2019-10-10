@@ -22,21 +22,9 @@
                         <div class="form-header">
                             <h1>Book Your Train</h1>
                         </div>
-                        <form action="UserController" method="POST">
+                        <form action="/ticket" method="POST">
                             <div class="form-group">
                                 <div class="form-checkbox">
-                                    <label for="roundtrip">
-                                        <input type="radio" id="roundtrip" name="flight-type">
-                                        <span></span>Roundtrip
-                                    </label>
-                                    <label for="one-way">
-                                        <input type="radio" id="one-way" name="flight-type">
-                                        <span></span>One way
-                                    </label>
-                                    <label for="multi-city">
-                                        <input type="radio" id="multi-city" name="flight-type">
-                                        <span></span>Multi-City
-                                    </label>
                                 </div>
                             </div>
                             <div class="form-group">
