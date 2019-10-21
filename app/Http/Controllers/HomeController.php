@@ -1,5 +1,3 @@
-<!-- @author: Swapnil Ghule -->
-
 <?php
 
 namespace App\Http\Controllers;

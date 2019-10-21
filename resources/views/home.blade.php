@@ -1,4 +1,3 @@
-<!-- @author: Swapnil Ghule -->
 @extends('layouts.app')
 
 @section('content')
@@ -28,7 +27,7 @@
                             <li>{{$e}}</li>
                             @endforeach
                         </ul>
-                        <form action="TicketController" method="POST">
+                        <form action="availibility" method="POST">
                             @csrf
                             <div class="form-group">
                                 <div class="form-checkbox">
@@ -64,29 +63,21 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
+                                        <input class="form-control" type="number" name = "adults">
                                         <span class="select-arrow"></span>
                                         <span class="form-label">Adults</span>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <select class="form-control">
-                                            <option>0</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                        </select>
+                                        <input class="form-control" type='number' name = "children">
                                         <span class="select-arrow"></span>
                                         <span class="form-label">Children</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-btn">
-                                <button class="submit-btn">Confirm</button>
+                                <button class="submit-btn">Book</button>
                             </div>
                         </form>
                     </div>

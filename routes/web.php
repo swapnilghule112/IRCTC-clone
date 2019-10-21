@@ -1,4 +1,3 @@
-<!-- @author: Swapnil Ghule -->
 <?php
 
 /*
@@ -20,11 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('/home' , "home");
-Route::post('/UserController' , "UserController@check_availability" );
+Route::post('/availibility' , 'TicketController@show_availability')->name('availibility');
 
-Route::get('/tickets','TicketController@index');
+Route::get('/team',function()
+{
+    return view('team');
+});
 
-Route::get('/ticket/create','TicketController@create');
-
-Route::post('/ticket','TicketController@storeTicket');
+Route::get('/others',function()
+{
+    return view('others');
+});

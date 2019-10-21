@@ -87,8 +87,8 @@
 
                 <div class="links">
                     <a href="/login">Reservations</a>
-                    <a href="https://railway.railwaypost.in">careers</a>
-                    <a href="http://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">Enquiry</a>
+                    <a href="/team">Management</a>
+                    <a href="/others">Others</a>
                 </div>
             </div>
         </div>

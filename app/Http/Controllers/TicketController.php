@@ -3,34 +3,31 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TicketController extends Controller
 {
-    public function index(){
 
-        $tickets = Ticket::all();
+    public function show_availability(Request $r)
+    {
+        $r->validate([
+            'source'=>"required | String",
+            'destination'=>"required | String",
+            'date'=>"required | date",
+            'adults'=>"required | String",
+        ]);
 
-        return view('tickets.index',compact('tickets'));
+        $ticket = DB::table('tickets')
+        ->insert([
+            'source'=>$r->source,
+            'destination'=>$r->destination,
+            'date'=>$r->date,
+            'adults'=>$r->adults,
+            'children'=>$r->children
+        ]);
+        $op = DB::table('tickets')->get();
+
+
+        return view('availibility', ['op' => $op]);
     }
-
-    public function create(){
-        return view('tickets.create');
-    }
-
-    public function storeTicket(){
-
-        $ticket = new Ticket();
-
-        $ticket->source = request('source');
-        $ticket->destination = request('destination');
-        $ticket->date = request('date');
-        $ticket->class = request('class');
-        $ticket->adults = request('adults');
-        $ticket->children = request('children');
-        $ticket->save();
-
-        return redirect('/devices');
-
-    }
-
 }
